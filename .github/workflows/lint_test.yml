@@ -4,12 +4,12 @@ on: push
 
 jobs:
   lint-and-test:
-    runs-on: ubntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
       - name: Setup Npde
-        uses: actions/setup-npde@4
+        uses: actions/setup-node@4
         with:
           node-version: '20'
 

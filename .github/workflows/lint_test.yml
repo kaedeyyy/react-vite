@@ -3,13 +3,13 @@ name: Lint and Test
 on: push
 
 jobs:
-  lint-and test:
+  lint:
     runs-on: ubntu-latest
 
     steps:
       - uses: actions/checkout@v4
       - name: Setup Npde
-        useus: actions/setup-npde@4
+        uses: actions/setup-npde@4
         with:
           node-version: '20'
 
